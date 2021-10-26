@@ -21,7 +21,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Unit Test') {
             steps {
                 echo 'Testing..'
             }
@@ -36,9 +36,7 @@ pipeline {
 
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh "mvn clean verify package sonar:sonar" 
-                    //sh "mvn clean verify package" 
-                    
+                    sh "mvn clean verify package sonar:sonar"
                 }
             }
         }
