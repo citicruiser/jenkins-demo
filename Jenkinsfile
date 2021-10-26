@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+
         stage('Test') {
             steps {
-                sh 'echo test'
+                echo 'Testing..'
             }
         }
 
@@ -28,7 +34,12 @@ pipeline {
               waitForQualityGate abortPipeline: true
            }
         }
-
+        
+        stage('Deploy2Dev') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
     
 }
