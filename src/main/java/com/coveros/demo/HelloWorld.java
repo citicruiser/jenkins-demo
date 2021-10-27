@@ -12,7 +12,7 @@ public class HelloWorld {
     final LocalDateTime now = LocalDateTime.now();
     System.out.println("Hello, World! The current time is " + dtf.format(now));
   }
-
+/*
   public int multiply(int firstNumber, int secondNumber) {
     String uname = "user1";
     String password = "Passw0rd!"; 
@@ -24,5 +24,5 @@ public class HelloWorld {
     Integer yourInt = myInt * 2;
     return firstNumber - secondNumber;
   }
-
+*/
 }
