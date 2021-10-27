@@ -14,14 +14,14 @@ public class HelloWorld {
   }
 
   public int multiply(int firstNumber, int secondNumber) {
-    String uname = "user1";
-    String password = "Passw0rd!"; 
+    //String uname = "user1";
+    //String password = "Passw0rd!"; 
     return firstNumber * secondNumber;
   }
 
   public int subtract(int firstNumber, int secondNumber) {
-    Integer myInt = null;
-    Integer yourInt = myInt * 2;
+    //Integer myInt = null;
+    //Integer yourInt = myInt * 2;
     return firstNumber - secondNumber;
   }
 
