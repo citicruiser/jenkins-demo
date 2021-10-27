@@ -10,14 +10,12 @@ public class HelloWorld {
   public static void main(final String[] args) {
     final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("h:mm:ss a 'on' MMMM d, yyyy'.'");
     final LocalDateTime now = LocalDateTime.now();
-    //String uname = "user1";
-    //String password = "Passw0rd!"; 
-
     System.out.println("Hello, World! The current time is " + dtf.format(now));
   }
 
   public int multiply(int firstNumber, int secondNumber) {
-
+    String uname = "user1";
+    String password = "Passw0rd!"; 
     return firstNumber * secondNumber;
   }
 
